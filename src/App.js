@@ -1,3 +1,7 @@
+import "@aws-amplify/ui-react/styles.css";
+import { API, Storage } from 'aws-amplify';
+
+
 import {
     Button,
     Flex,
@@ -8,10 +12,9 @@ import {
     View,
     withAuthenticator,
 } from '@aws-amplify/ui-react';
-import "@aws-amplify/ui-react/styles.css";
-import { API, Storage } from "aws-amplify";
 import React, { useEffect, useState } from "react";
 import "./App.css";
+
 
 import {
     createNote as createNoteMutation,
